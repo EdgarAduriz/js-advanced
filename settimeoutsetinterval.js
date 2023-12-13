@@ -4,6 +4,7 @@ function mostraPromemoria() {
   };
 setTimeout(mostraPromemoria, 5000);
 console.log("Il promemoria è in fase di impostazione")
+
 //Esercizio 4
 function dado(min, max) {
     return Math.floor((Math.random() * max) + min)
@@ -16,6 +17,7 @@ setTimeout(function ()  {
     1000);
 console.log("Lancio dei dadi in corso...")}
 lanciaDadi()
+
 //Esercizio 1
 function visualizzaOrologio() {
     const orarioCorrente = new Date();
@@ -25,6 +27,7 @@ function visualizzaOrologio() {
     console.log(`Ora attuale: ${ore}:${minuti}:${secondi}`);
   };
 setInterval(visualizzaOrologio,1000)
+
 //Esercizio 2
 let tempoRimanente = 10;
 function contoAllaRovescia() {

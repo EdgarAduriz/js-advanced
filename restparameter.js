@@ -4,6 +4,7 @@ return argomenti.reduce((acc, argomento) => acc + argomento, 0)
 };
 let miaSomma = somma(3, 1, 3, 7, 4);
 console.log(miaSomma)
+
 // Esercizio 2
 function filterOutOdds(...args) {
     let arr =[];
