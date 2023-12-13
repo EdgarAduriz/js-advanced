@@ -1,15 +1,10 @@
 //Esercizio 3
 const fruits = ["Mela", "Banana", "Kiwi", "Fragola"];
 fruits.forEach(fruit => console.log(fruit + "!"))
+
 //Esercizio 1
 function adultFilter(persons) {
-   let maggiorenni = [];
-persons.forEach(person => {
-    if(person.age >=18) {
-        maggiorenni.push(person)
-    }
-})
-return maggiorenni
+return persons.filter(person => person.age >= 18)
 } 
   const persons = [
     { name: 'Paul', age: 16 },
@@ -26,6 +21,7 @@ return maggiorenni
   const adults = adultFilter(persons);
   console.log(persons);
   console.log(adults);
+
 //Esercizio 4
 function nicknameMap(persone) {
   let soprannomi = [];
@@ -48,6 +44,7 @@ const persone = [
 const nicknames = nicknameMap(persone);
   console.log(persone);
   console.log(nicknames);
+
 //Esercizio di riepilogo
 const studenti = [
     { nome: "Alice", voto: 95 },
@@ -66,6 +63,7 @@ let maiuscoli = studenti.map(studente => studente.nome.toUpperCase());
 console.log(maiuscoli)
 let braviStudenti = studenti.filter(studente => studente.voto >= 85);
 console.log(braviStudenti)
+
 // Esercizio 5
 function calculateAverageAge(people) {
  let sommaAge = people.reduce((acc, p) => acc + p.age, 0);
@@ -87,9 +85,10 @@ const people = [
 const average = calculateAverageAge(people);
 console.log(people);
 console.log(average)
+
 // Esercizio 2
 function firstUncompletedNote(notes) {
-  // ...
+   return notes.find(note => note.todos.find(todo => todo.done === false))
 }
 const notes = [
   { id: 1,
