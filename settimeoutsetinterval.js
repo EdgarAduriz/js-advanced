@@ -7,7 +7,7 @@ console.log("Il promemoria è in fase di impostazione")
 
 //Esercizio 4
 function dado(min, max) {
-    return Math.floor((Math.random() * max) + min)
+    return Math.floor(Math.random() * (max -min +1)) + min
   };
 function lanciaDadi() {
 let dado1 = dado(1,6);
