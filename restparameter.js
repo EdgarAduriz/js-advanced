@@ -7,12 +7,6 @@ console.log(miaSomma)
 
 // Esercizio 2
 function filterOutOdds(...args) {
-    let arr =[];
-args.forEach(arg => {
-    if (arg % 2 === 0) {
-        arr.push(arg)
-    }
-})
-return arr}
+return args.filter(arg => arg % 2 === 0) }
 let numeriPari = filterOutOdds(2, 3, 8, "Ciao", 9, 11, 13, 20, 5);
 console.log(numeriPari)
