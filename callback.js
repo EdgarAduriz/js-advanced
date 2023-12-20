@@ -39,6 +39,15 @@ const numeri = [1, 2, 3, 4, 5, 6];
 const evenNumbers = filterArray(numeri, isEven);
 console.log(evenNumbers)
 
+/*un altro modo per svolgere questo esercizio è il seguente 
+function filterArray(arr, callback) { let filteredArray = []; arr.forEach(element => { if (callback(element)) { filteredArray.push(element); } }); return filteredArray; }
+
+function isEven(num) { return num % 2 === 0; }
+
+const numeri = [1, 2, 3, 4, 5, 6]; const evenNumbers = filterArray(numeri, isEven); console.log(evenNumbers);
+
+in questo modo la funzione isEven ritorna un booleano che indica alla funzione principale se il numero è pari e quindi può effettuare il push oppure no*/
+
 //Esercizio 4
 function runCallbacks(callbacks) {
     callbacks.forEach(callback => {
