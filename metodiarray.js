@@ -24,11 +24,7 @@ return persons.filter(person => person.age >= 18)
 
 //Esercizio 4
 function nicknameMap(persone) {
-  let soprannomi = [];
-persone.forEach(persona => {
-    soprannomi.push(persona.name + "-" + persona.age)
-})
-return soprannomi};  
+return persone.map(persona => `${persona.name}-${persona.age}`)};  
 const persone = [
     { name: 'Paul', age: 16 },
     { name: 'George', age: 17 },
