@@ -19,7 +19,7 @@ function fetchDataFromAPI() {
         let obj = { name: "John", age: 30 }
           if (obj) {
           resolve(obj)}
-          else {resolve('Impossibile recuperare dati')}}, 1000)})};
+          else {reject(new Error ('Impossibile recuperare dati'))}}, 1000)})};
 
-fetchDataFromAPI().then((data) => {console.log(data)}).catch((error) => {console.log(error)})
+fetchDataFromAPI().then((data) => {console.log(data)}).catch((error) => {console.log(error.message)})
   
