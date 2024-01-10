@@ -9,7 +9,7 @@ function fetchDataFromAPI() {
           const success = Math.random() < 0.5
           if (success) {
           resolve("Data retrieved successfully")}
-          else {resolve("Error: Failed to fetch data")}}, 1000)})
+          else {reject(new Error("Failed to fetch data"))}}, 1000)})
         };
 
-fetchDataFromAPI().then((data) => {console.log(data)}).catch((error) => {console.log(error)})
+fetchDataFromAPI().then((data) => {console.log(data)}).catch((error) => {console.log(error.message)})
